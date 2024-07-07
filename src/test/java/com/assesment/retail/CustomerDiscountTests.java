@@ -1,12 +1,14 @@
 package com.assesment.retail;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.time.LocalDate;
 import java.util.Arrays;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.assesment.retail.discount.CustomerDiscountContext;
 import com.assesment.retail.domain.Bill;
@@ -15,6 +17,7 @@ import com.assesment.retail.domain.User;
 import com.assesment.retail.domain.UserType;
 
 @SpringBootTest
+@ActiveProfiles("test")
 class CustomerDiscountTests {
 
 	@Autowired

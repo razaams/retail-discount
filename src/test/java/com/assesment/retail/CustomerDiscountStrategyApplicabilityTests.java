@@ -1,12 +1,13 @@
 package com.assesment.retail;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.time.LocalDate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.assesment.retail.discount.CustomerDiscount;
 import com.assesment.retail.discount.strategy.AffiliateDiscountStrategy;
@@ -16,6 +17,7 @@ import com.assesment.retail.domain.User;
 import com.assesment.retail.domain.UserType;
 
 @SpringBootTest
+@ActiveProfiles("test")
 class CustomerDiscountStrategyApplicabilityTests {
 
 	@Test

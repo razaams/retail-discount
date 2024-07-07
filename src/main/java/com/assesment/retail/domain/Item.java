@@ -1,12 +1,14 @@
 package com.assesment.retail.domain;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-@Data
+@Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@ToString
 public class Item {
 	private String name;
 	private double price;

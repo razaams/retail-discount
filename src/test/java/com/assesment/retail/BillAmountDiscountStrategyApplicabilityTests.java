@@ -8,6 +8,7 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
 import com.assesment.retail.discount.BillAmountDiscount;
 import com.assesment.retail.discount.strategy.PerHundredAmountDiscountStrategy;
@@ -17,6 +18,7 @@ import com.assesment.retail.domain.User;
 import com.assesment.retail.domain.UserType;
 
 @SpringBootTest
+@ActiveProfiles("test")
 class BillAmountDiscountStrategyApplicabilityTests {
 
 	@Test

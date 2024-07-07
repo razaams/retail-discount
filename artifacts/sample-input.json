@@ -1,0 +1,117 @@
+[
+  {
+    "user": {
+      "userType": "EMPLOYEE",
+      "customerSince": "2024-07-07"
+    },
+    "items": [
+      {
+        "name": "Apple",
+        "price": 30,
+        "grocery": true
+      },
+      {
+        "name": "Room Cooler",
+        "price": 35,
+        "grocery": false
+      },
+      {
+        "name": "Air Condition",
+        "price": 80,
+        "grocery": false
+      }
+    ]
+  },
+  {
+    "user": {
+      "userType": "AFFILIATE",
+      "customerSince": "2024-07-06"
+    },
+    "items": [
+      {
+        "name": "Apple",
+        "price": 30,
+        "grocery": true
+      },
+      {
+        "name": "Room Cooler",
+        "price": 40,
+        "grocery": false
+      },
+      {
+        "name": "Air Condition",
+        "price": 70,
+        "grocery": false
+      }
+    ]
+  },
+  {
+    "user": {
+      "userType": "CUSTOMER",
+      "customerSince": "2024-07-06"
+    },
+    "items": [
+      {
+        "name": "Apple",
+        "price": 15,
+        "grocery": true
+      },
+      {
+        "name": "Room Cooler",
+        "price": 28,
+        "grocery": false
+      },
+      {
+        "name": "Air Condition",
+        "price": 88,
+        "grocery": false
+      }
+    ]
+  },
+  {
+    "user": {
+      "userType": "CUSTOMER",
+      "customerSince": "2021-07-06"
+    },
+    "items": [
+      {
+        "name": "Apple",
+        "price": 25,
+        "grocery": true
+      },
+      {
+        "name": "Room Cooler",
+        "price": 45,
+        "grocery": false
+      },
+      {
+        "name": "Air Condition",
+        "price": 72,
+        "grocery": false
+      }
+    ]
+  },
+  {
+    "user": {
+      "userType": "CUSTOMER",
+      "customerSince": "2024-07-06"
+    },
+    "items": [
+      {
+        "name": "Apple",
+        "price": 9,
+        "grocery": true
+      },
+      {
+        "name": "Room Cooler",
+        "price": 51,
+        "grocery": false
+      },
+      {
+        "name": "Air Condition",
+        "price": 18,
+        "grocery": false
+      }
+    ]
+  }
+]
