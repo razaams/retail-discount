@@ -1,19 +1,16 @@
 package com.assesment.retail.discount.strategy;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.assesment.retail.discount.AmountDiscount;
+import com.assesment.retail.discount.BillAmountDiscount;
 import com.assesment.retail.domain.Bill;
 
 @Component
-public class PerHundredAmountDiscountStrategy implements AmountDiscount {
+public class PerHundredAmountDiscountStrategy implements BillAmountDiscount {
 
-	@Value("${discount.amount.threshold}")
-	private double BULK_DISCOUNT_THRESHOLD;
+	private static final double BULK_DISCOUNT_THRESHOLD = 100;
 
-	@Value("${discount.amount.hundred.percentage}")
-	private double BULK_DISCOUNT_AMOUNT;
+	private static final double BULK_DISCOUNT_AMOUNT = 5;
 
 	@Override
 	public double calculateDiscount(Bill bill) {

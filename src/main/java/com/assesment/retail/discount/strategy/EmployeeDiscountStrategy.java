@@ -1,6 +1,5 @@
 package com.assesment.retail.discount.strategy;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import com.assesment.retail.discount.CustomerDiscount;
@@ -11,8 +10,7 @@ import com.assesment.retail.domain.UserType;
 @Component
 public class EmployeeDiscountStrategy implements CustomerDiscount {
 
-	@Value("${discount.employee.percentage}")
-	private double DISCOUNT_PERCENTAGE;
+	private static final double DISCOUNT_PERCENTAGE = 30;
 
 	@Override
 	public double calculateDiscount(Bill bill) {
@@ -23,5 +21,4 @@ public class EmployeeDiscountStrategy implements CustomerDiscount {
 	public boolean isApplicable(User user) {
 		return UserType.EMPLOYEE.equals(user.getUserType());
 	}
-
 }

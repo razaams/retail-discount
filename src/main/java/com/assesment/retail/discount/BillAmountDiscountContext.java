@@ -7,11 +7,11 @@ import org.springframework.stereotype.Component;
 import com.assesment.retail.domain.Bill;
 
 @Component
-public class AmountDiscountContext {
+public class BillAmountDiscountContext {
 
-	private List<AmountDiscount> amountDiscountStrategies;
+	private List<BillAmountDiscount> amountDiscountStrategies;
 
-	public AmountDiscountContext(List<AmountDiscount> amountDiscountStrategies) {
+	public BillAmountDiscountContext(List<BillAmountDiscount> amountDiscountStrategies) {
 		this.amountDiscountStrategies = amountDiscountStrategies;
 	}
 
